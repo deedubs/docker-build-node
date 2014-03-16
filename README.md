@@ -1,4 +1,4 @@
-docker-build-node
+node-build
 =================
 
 Use a docker container to build the latest nodejs on debian wheezy
@@ -12,6 +12,6 @@ Use a docker container to build the latest nodejs on debian wheezy
   
 * Use builder to build latest node
 
-  ````docker run -v ~/:/host:rw node-builder````
+  ````docker run -v /tmp/:/host:rw node-builder````
   
-  NOTE: Passing ~/ will write the deb to your home directory
+  NOTE: /tmp refers to where node-build will write the deb file
